@@ -4,7 +4,7 @@ This document will guide you through the installation process of ApertoTech.io
 
 ## Prerequisites
 
-Ensure that you have Python 3.8 or newer, OpenCV, and MediaPipe installed on your machine. 
+Ensure that you have Python 3.7.9 or newer, OpenCV, and MediaPipe 0.9.0 installed on your machine. 
 
 ## Installation
 
@@ -14,14 +14,11 @@ Ensure that you have Python 3.8 or newer, OpenCV, and MediaPipe installed on you
 
 ```bash
 pip install -r requirements.txt
+```
 
 Run the main.py script to start the application:
 python main.py
 
-
-3. `CONTRIBUTING.md`
-
-```markdown
 # Contributing to ApertoTech.io
 
 We love your input! We want to make contributing to this project as easy and transparent as possible, whether it's:
