@@ -1,27 +1,27 @@
-# Installation Guide for ApertoTech.io
+# Installation Guide for ApertoTech-Vision
 
-This document will guide you through the installation process of ApertoTech.io
+This document will guide you through the installation process of ApertoTech-Vision
 
 ## Prerequisites
 
-Ensure that you have Python 3.8 or newer, OpenCV, and MediaPipe installed on your machine. 
+Ensure that you have Python 3.7.9 or older, OpenCV, and MediaPipe 0.9.0 installed on your machine. 
 
 ## Installation
 
 1. Clone this repository to your local machine
 2. Navigate to the project directory
-3. Install the dependencies using pip:
+3. Install requirements
 
 ```bash
 pip install -r requirements.txt
+```
 
-Run the main.py script to start the application:
+4. Run the main.py script to start the application:
+
+```bash
 python main.py
+```
 
-
-3. `CONTRIBUTING.md`
-
-```markdown
 # Contributing to ApertoTech.io
 
 We love your input! We want to make contributing to this project as easy and transparent as possible, whether it's:
