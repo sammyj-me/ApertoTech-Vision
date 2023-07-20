@@ -3,6 +3,7 @@ import cv2
 import urllib.request
 from PIL import ImageFont, ImageDraw, Image
 from datetime import datetime
+import os
  
 def get_date():
     date_time = datetime.now() # auto generated
@@ -34,8 +35,10 @@ def url_to_image(url):
 
 def draw_text(img, text, pos):
     pil_image = Image.fromarray(img) # convert image to pil
-    draw = ImageDraw.Draw(pil_image) # create image draw object
-    font = ImageFont.truetype("Aperto_Modules/fonts/Raleway-SemiBold.ttf", 50) # must be filepath to directory if on local machine
+    draw = ImageDraw.Draw(pil_image) # create image draw object    
+    dir_path = os.path.dirname(os.path.realpath(__file__)) # Get the absolute path of the directory of the script file
+    os.chdir(dir_path)  # Change the working directory
+    font = ImageFont.truetype("fonts/Raleway-SemiBold.ttf", 50) # must be filepath to directory if on local machine
     
     # Write the text to the image
     draw.text(pos, text, font=font, fill="black")

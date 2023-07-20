@@ -127,6 +127,8 @@ class Analyzer:
         standard_deviation = np.std(n)
         mean = np.mean(n)
         
+        plt.show(bins)
+        
         foot_placement_points_percent = [[],[]]
         for i, value in enumerate(n):
             if value >= 5:
